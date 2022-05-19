@@ -1,0 +1,424 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: red;
+    display:flex;
+    justify-content: space-between;
+    z-index: 700;
+}
+
+.navegador{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(231, 190, 190, 0.7),rgba(243, 105, 105, 0.7)),url(imagenes/estudaintes.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: auto;
+}
+
+
+.nav img{
+    margin-left: 10px;
+    padding: 5px;
+    height: 50px;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.nav ul li{
+    margin-top: 12px;
+    margin-right:10px ;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li:hover{
+    background-color: rgb(100, 0, 0);
+    cursor: pointer; 
+    transition: background .5s;  
+}
+
+.navtoggle{
+    color: white;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+    z-index: 900;
+}
+
+.texto-inicio h1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    color: white;
+}
+
+#info{
+    padding: 2%;
+    margin: 2%;
+}
+
+.informacion1 h1{
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+.informacion1 p{
+    color: white;
+    width: 35%;
+    padding: 2%;
+    margin: 2%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.info-presidente{
+    position: relative;
+    margin: 2%;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 40%;
+    display: block;
+}
+
+.info-presidente h1{
+    padding: 2%;
+    text-align: center;
+}
+
+.info-presidente h2{
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 46%;
+}
+
+.info-presidente p{
+    position: absolute;
+    padding: 5px;
+    left: 40%;
+    top: 40%;
+}
+
+.info-presidente img{
+    padding: 2%;
+    height: 20;
+    width: 35%;
+    border-radius: 17px;
+}
+
+.veron{
+    position: absolute;
+    left: 50%;
+    top: 140%;
+    margin: 2%;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 40%;
+    height: 55%;
+    display: block;
+}
+
+.veron img{
+    margin-top: 2%;
+    padding: 2%;
+    height: 60%;
+    width: 40%;
+    border-radius: 17px;
+}
+
+.veron h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.veron h2{
+    font-size: 20px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+}
+
+.veron p{
+    position: absolute;
+    padding: 2%;
+    left: 47%;
+    top: 27%;
+}
+#estadio{
+    position: relative;
+    margin: 3%;
+    padding: 3%;
+}
+
+.estadio h1{
+    text-align: center;
+    margin: 3%;
+}
+
+.estadio2{
+    background-color:rgb(243, 16, 16);
+    color: white;
+    border-radius: 5px;
+}
+
+.estadio2 img{
+    padding: 2%;
+    margin: 2%;
+    width: 40%;
+    height: 20%;
+    border-radius: 27px;
+}
+
+.estadio2 h2{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+.estadio2 p{
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    width: 40%;
+}
+
+
+
+.pie{
+    text-align: center;
+    background-color: rgb(243, 16, 16);
+    padding: 2%;
+    margin-top: 100px;
+}
+
+.pie h1{
+    margin: 2%;
+    color: white;
+}
+
+.pie a{
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    text-decoration: none;
+}
+
+.copy {
+    color: white;
+    margin-top: 25px;
+}
+
+@media screen and (max-width:900px){
+    nav{
+        height: 50px;
+    }
+
+    
+    .navtoggle{
+        display: block;
+    }
+    
+    .nav img{
+        margin-left: 10px;
+        padding: 1px;
+        height: 45px;
+    }
+    
+    .navmenu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 50px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav ul li a{
+        color: white;
+        text-decoration: none;
+        flex-direction: column;
+    }
+    
+    .menu-activo{
+        left: 0;
+    }
+
+
+    .texto-inicio h1{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        color: white;
+    }
+
+    #info{
+        padding: 2%;
+        margin: 2%;
+    }
+    
+    .informacion1 h1{
+        text-align: center;
+        padding: 2%;
+        margin: 2%;
+    }
+    
+    .informacion1 p{
+        color: white;
+        width: 90%;
+        padding: 2%;
+        margin: 5%;
+        background-color: red;
+        border-radius: 5px;
+    }
+    
+    .info-presidente{
+        position: relative;
+        margin: 5%;
+        padding: 2%;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        width: 90%;
+        display: block;
+    }
+    
+    .info-presidente h1{
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .info-presidente h2{
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 46%;
+    }
+    
+    .info-presidente p{
+        position: absolute;
+        padding: 5px;
+        left: 40%;
+        top: 40%;
+    }
+    
+    .info-presidente img{
+        padding: 2%;
+        height: 20;
+        width: 35%;
+        border-radius: 17px;
+    }
+
+
+    .veron{
+        position: relative;
+        left: 0;
+        margin: 5%;
+        padding: 2%;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        width: 90%;
+        display: block;   
+    
+    }
+    
+    .veron img{
+        margin-top: 2%;
+        padding: 2%;
+        height: 60%;
+        width: 40%;
+        border-radius: 17px;
+    }
+    
+    .veron h1{
+        text-align: center;
+        padding: 2%;
+    }
+    
+    .veron h2{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .veron p{
+    
+        padding: 2%;
+    }
+
+    #estadio{
+        position: relative;
+        padding: 2%;
+        margin: 2%;
+    }
+    
+    .estadio h1{
+        text-align: center;
+        margin: 3%;
+    }
+    
+    .estadio2{
+        position: relative;
+        margin: 5%;
+        padding: 2%;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        width: 90%;
+        display: block;  
+    }
+    
+    .estadio2 img{
+        padding: 2%;
+        margin-left: 50px;
+        height: 90%;
+        width: 70%;
+        border-radius: 15px;
+    }
+    
+    .estadio2 h2{
+        position: static;
+        padding: 2%;
+        margin: 2%;
+    }
+    
+    .estadio2 p{
+        position: static;
+        width: 90%;
+        margin: 2%;
+        padding: 2%;
+    }
+
+}
